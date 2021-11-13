@@ -1,89 +1,159 @@
 @font-face {
-  font-family: Inter;
-  src: url(Inter-Regular.ttf);
+    font-family:Inter;
+    src: url(Files/Inter-Regular.ttf);
 }
 @font-face {
-  font-family: Lexend;
-  src: url(LexendDeca-Regular.ttf);
+    font-family:Lexand;
+    src: url(Files/LexendDeca-Regular.ttf);
 }
-
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-  margin: 0;
-  padding: 0;
-  background-color: hsl(233, 47%, 7%);
+    background-color:hsl(233, 47%, 7%);
 }
-
 .card {
-  width: 1230px;
-  height: 500px;
-  background-color: hsl(244, 38%, 16%);
-  border-radius: 10px;
-  position: relative;
-  top: 12em;
-  left: 18.6em;
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color: hsl(244, 38%, 16%);
+    width: 50em;
+    height: 20em;
+    border-radius: 5px;
 }
-.image {
-  background: url(image-header-desktop.jpg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 607px;
-  border-radius: 10px;
-  height: 100%;
-  bottom: 20.2em;
-  position: relative;
+img {
+    background-color: blue;
+    height:100%;
+    width: auto;
+    float: right;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .color {
-  float: right;
-  top: 0;
-  right: 0;
-  width: 49.2999%;
-  height: 100%;
-  background: hsl(277, 92%, 21%);
-  opacity: 70%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+    position: fixed;
+    float: right;
+    top: 0;
+    right: 0;
+    width: 48.4%;
+    height: 100%;
+    background: hsl(277, 92%, 21%);
+    opacity: 60%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  h1 {
+      font-weight: 600;
+      color:hsl(0, 0%, 100%);
+      font-family: Inter;
+      font-size: 1.6em;
+      margin-left: 2em;
+      margin-top: 2em;
+
+  }
+  h1 span {
+      color: hsl(277, 64%, 61%);
+  }
+  .main-para {
+      font-family: Inter;
+      font-weight: 100;
+      font-size: .73em;
+      line-height: 1.8em;
+      color:hsla(0, 0%, 100%, 0.75);
+      margin-left: 4.2em;
+      margin-top: 2em;
+  }
+  h3 {
+      color:hsl(0, 0%, 100%);
+      font-family: Inter;
+      margin-left: 3em;
+      margin-top:2.5em;
+      word-spacing: 5em;
+      font-size:1em;
+      font-weight:600;
+
+  }
+  h6 {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: Inter;
+      font-weight: 100;
+      margin-left: 4.5em;
+      margin-top: .7em;
+      font-size: .65em;
+      word-spacing: 5.1em;
+  }
+  .show-desktop {
+      display:inline;
+  }
+  .show-mobile {
+    display:none;
 }
-.card-head {
-  color: white;
-  font-size: 36.5px;
-  width: 670px;
-  text-align: left;
-  font-family: Lexend;
-  font-weight: 600;
-  top: 2em;
-  left: 2em;
-  position: relative;
+  @media screen and (max-width: 768px){
+      .card {
+          width: 45em;
+      }
+      .color {
+          width:22.8em;
+      }    h1 {
+          margin-left: 2em;
+      }
+      img {
+          width: 50.5%;
+      }
+  }
+  @media  screen and (max-width:725px) {
+    .card {
+        width: 20em;
+        height: 47em;
+    }
+    img {
+        height:33.6%;
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0em;
+    }
+    .color {
+        width:20em;
+        height: 15.8em;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0em;
+    }
+    h1 {
+        text-align: center;
+        margin-left:0;
+        margin-top: 11em;
+    }
+    .show-desktop {
+        display:none;
+    }
+    .show-mobile {
+        display: inline;
+    }
+    .main-para {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 1em;
+        font-size: .8em;
+    }
+    .stats1 {
+        font-family: Inter;
+        color:white;
+        font-size: 1.5em;
+        font-weight: 600;
+        line-height: 1em;
+        text-align: center;
+        margin-top: 1.3em;
+    }
+    .stats1 span {
+        font-family: Inter;
+        color: hsla(0, 0%, 100%, 0.75);
+        color: hsla(0, 0%, 100%, 0.75);
+      font-family: Inter;
+      font-weight: 100;
+      font-size: .46em;
+      letter-spacing: .1em;
+    }
 }
-.purple-text {
-  color: hsl(277, 64%, 61%);
-}
-.card-main-text {
-  color: hsla(0, 0%, 100%, 0.445);
-  font-family: Inter;
-  font-weight: 300;
-  line-height: 26px;
-  font-size: 15.5px;
-  position: relative;
-  top: 5.2em;
-  left: 4.8em;
-}
-.card-num {
-  font-family: Lexend;
-  color: white;
-  font-size: 30px;
-  font-weight: 600;
-  position: relative;
-  top: 4.3em;
-  left: 2.4em;
-  word-spacing: 83.5px;
-}
-.card-num-text {
-  font-family: Inter;
-  font-weight: 600px;
-  color: hsla(0, 0%, 100%, 0.445);
-  font-size: 14px;
-  position: relative;
-  top: 7.6em;
-  left: 5.2em;
-  word-spacing: 65px;
-}
+  
