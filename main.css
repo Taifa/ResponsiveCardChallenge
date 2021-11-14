@@ -104,7 +104,7 @@ img {
   }
   @media  screen and (max-width:725px) {
     .card {
-        width: 18em;
+        width: 22em;
         height: 40em;
     }
     img {
@@ -115,7 +115,7 @@ img {
         border-bottom-right-radius: 0em;
     }
     .color {
-        width:18em;
+        width:22em;
         height: 13.2em;
         border-top-left-radius: 5px;
         border-bottom-right-radius: 0em;
